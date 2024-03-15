@@ -281,17 +281,17 @@
 .banner_text ul.social{
   display:flex;
   align-items:center;
-  gap:2rem;
+  gap:4rem;
 }
 .banner_text ul.social li a{
   color:var(--light);
-  font-size:3rem;
+  font-size:2rem;
 }
 .banner_text{
   max-width:65rem;
   display:flex;
   flex-direction:column;
-  gap:4rem;
+  gap:2rem;
 }
 .banner_text h1{
   font-size:5rem;
@@ -304,7 +304,7 @@
 }
 .banner_text ul.dutdot{
   display:flex;
-  gap:2rem;
+  gap:1rem;
 }
 @media screen and (max-width:500px){
   .banner_text h1{
@@ -336,12 +336,134 @@
   }
 }
 
+/* OFFER */
+.offer{
+  background-color:var(--light);
+  background-size:cover;
+  height:100vh;
+  align-items:center;
+}
+
+.offer_text a{
+  background:var(--primary);
+  padding:1rem 1rem;
+  border-radius:5rem;
+  width: fit-content;
+}
+/* TEXTS */
+.offer_text{
+  max-width:50rem;
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+}
+.offer_text h2{
+  font-size:3rem;
+  color:var(--primary);
+  font-weight:700;
+}
+.offer_text p{
+  color:var(--dark);
+  font-size:1.5rem;
+  font-weight:545;
+}
+/* BTN */
+.offer_text a{
+  color:var(--light);
+  font-size:1.5rem;
+  font-weight:600;
+  text-align:center;
+}
+/* PRICE */
+.offer_price h3{
+  color:var(--yellow);
+  font-size:4rem;
+  font-weight:600;
+}
+.offer_price h2{
+  color:var(--primary);
+  font-size:3rem;
+  font-weight:600;
+}
+.offer_price_bot h4{
+  color:var(--primary);
+  font-size:14rem;
+  font-weight:600;
+}
+.offer_price_bot h3{
+  color:var(--primary);
+  font-size:7rem;
+  font-weight:600;
+}
+.offer_cents h4{
+  color:var(--yellow);
+  font-size:2.5rem;
+  font-weight:700;
+}
+
+@media screen and (max-width:500px){
+  .offer_text h2{
+    font-size:3.5rem;
+    text-align:center;
+  }
+  .offer_text p{
+    font-size:1.5rem;
+    font-weight:545;
+    text-align:flex-start;
+  }
+  .offer_text a{
+    color:var(--light);
+    font-size:1.5rem;
+    text-align:center;
+  }
+  .offer_price h3{
+    font-size:3rem;
+    text-align:center;
+  }
+  .offer_price h2{
+    font-size:3rem;
+    text-align:column;
+  }
+  .offer_price_bot h4{
+    font-size:14rem;
+    text-align:center;
+  }
+  .offer_price_bot h3{
+    font-size:7rem;
+    text-align:center;
+  }
+  .offer_cents h4{
+    color:var(--yellow);
+    font-size:2.5rem;
+    font-weight:700;
+  }
+
+  .offer_text ul.dutdot{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+  }
+  .offer_text ul.dutdot li a{
+    width:80%;
+  }
+  .offer_text ul.social{
+    justify-content:center;
+  }
+  .offer_faq{
+    width:100%;
+    border-top-left-radius:0rem;
+  }
+  .offer_faq a{
+    justify-content:center;
+  }
+}
 
 /* REPEATABLE PATTERNS */
 :root{
     --light:#FFFFFF;
     --dark:#2B2B2B;
     --primary:#134A8C;
+    --yellow:rgba(255, 145, 0, 0.898);
 }
 .btn{
   display:inline-block;
